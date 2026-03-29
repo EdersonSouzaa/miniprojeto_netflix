@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <h1>Quem está assistindo?</h1>
+
+    <section id="outros-perfis">
+
+      <article class="perfil">
+        <img src="./assets/perfil_um.jpg" alt="imagem de um gavião">
+        <h3 class="nome-perfil">Ana</h3>
+      </article>
+
+      <article class="perfil">
+        <img src="./assets/perfil_dois.jpg" alt="imagem de um gato">
+        <h3 class="nome-perfil">Pedro</h3>
+      </article>
+
+      <article class="perfil">
+        <img src="./assets/perfil_tres.jpg" alt="imagem de uma pinguim">
+        <h3 class="nome-perfil">Laura</h3>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const perfis = document.querySelectorAll('.perfil');
+      
+      perfis.forEach(perfil => {
+        perfil.addEventListener('click', () => {
+          const nome = perfil.querySelector('.nome-perfil').textContent;
+          const imagem = perfil.querySelector('img').src;
+          
+          localStorage.setItem('perfilAtivoNome', nome);
+          localStorage.setItem('perfilAtivoImagem', imagem);
+          
+          window.location.href = './catalogo/catalogo.html';
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
