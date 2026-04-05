@@ -135,10 +135,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 ...displayCategories[0],
                 title: "Favoritos da Laura",
                 items: [
-                    { title: "Dark", year: "2017", img: "https://upload.wikimedia.org/wikipedia/en/d/da/DarkNetflixPosterEnglish.jpg", youtube: "https://www.youtube.com/watch?v=b9EkMc79ZSU" },
-                    { title: "Mindhunter", year: "2017", img: "https://upload.wikimedia.org/wikipedia/en/7/7c/Mindhunter_titlecard.jpg", youtube: "https://www.youtube.com/watch?v=oFlKiTwhd38" },
-                    { title: "Black Mirror", year: "2011", img: "https://www.nextpit.com/img/nextpit_Black_Mirror_7.jpg", youtube: "https://www.youtube.com/watch?v=v3Z1GG4iIDU" },
-                    { title: "Narcos", year: "2015", img: "https://upload.wikimedia.org/wikipedia/en/9/9a/Narcos_season_1.png", youtube: "https://www.youtube.com/watch?v=U7elNhHwgBU" }
+                    { title: "Dark", year: "2017", img: "https://kikacastro.com.br/wp-content/uploads/2020/08/dark.jpg", youtube: "https://www.youtube.com/watch?v=9RNHKKYJvg8" },
+                    { title: "Mindhunter", year: "2017", img: "https://images.jota.info/wp-content/uploads/2017/10/mindhunter2.jpg", youtube: "https://www.youtube.com/watch?v=J4LWdJHJxbs" },
+                    { title: "Emergência Radioativa", year: "2026", img: "https://s2-oglobo.glbimg.com/uF-I8pHIsowMQo93_Xzh_Qtp65w=/0x0:1600x900/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/X/O/DBPwoBSvKtKqi78srX1w/emergencia-radioativa.jpg", youtube: "https://www.youtube.com/watch?v=s0wVghg4vS4" },
+                    { title: "La casa de Papel", year: "2021", img: "https://s2.glbimg.com/bybsqIjj2DRAzl_K9o2Oh9-5JAU=/640x424/top/i.glbimg.com/og/ig/infoglobo/f/original/2021/08/27/02112359593116.jpg", youtube: "https://www.youtube.com/watch?v=iS5xXr-GOnM" },
+                    { title: "The Choosen", year: "2025", img: "https://aventurasnahistoria.com.br/wp-content/uploads/2025/03/thechosen.jpg", youtube: "https://www.youtube.com/watch?v=K1-FoFj8Jbo" }
+                ]
+            };
+
+             displayCategories[1] = {
+                ...displayCategories[1],
+                title: "Séries",
+                items: [
+                    { title: "Manifest", year: "2018", img: "https://ovicio.com.br/wp-content/uploads/2022/11/20221105-ovicio-manifest-capa-1024x576.jpg", youtube: "https://www.youtube.com/watch?v=yDGQYLVcsvc" },
+                    { title: "Outer Banks", year: "2024", img: "https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABUjY142YFFXJ5Cx2tjwm8mFRAioV2eHQWPmqmj-8lOl3jPXdkOrqXQvW89go54_KCuets20CH1M22N3AyXpfD37jJta1dHzp2S8IA4pcQVucYIHfOpLw1wHgq20d-F8PW3mRyg.webp?r=a7b", youtube: "https://www.youtube.com/watch?v=pipb8KRUo9g" },
+                    { title: "A arte de Sarah", year: "2026", img: "https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABRUOpzCksMrUhZ9yXEK4xKPgulzuBkzsR-048WVs03qbgbTU7tny96sqIufHUZ9XTairrqsk_la-WzadpvzU4wabxe2o7Tbmr-hIqUqg73yzssMgUDh6jfMMtg.jpg?r=0d5", youtube: "https://www.youtube.com/watch?v=fZg6w9ulLYw" },
+                    { title: "My Name", year: "2021", img: "https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABYCIUz2aiZazSb0liZvQgCrpoZoaPFrDrbA6fLeZd7YhXFuFv4OsmRshZFemY2VN3oYYjicAI9DDIcnqX5oZpaDtasH3cKTLHuoc.jpg?r=5eb", youtube: "https://www.youtube.com/watch?v=miw-wW6ka14" },
+                    { title: "Cidade de Deus", year: "2002", img: "https://rollingstone.com.br/wp-content/uploads/2024/08/onde-assistir-a-cidade-de-deus-a-luta-nao-para-serie-derivada-do-longa-de-sucesso-de-2002.jpg", youtube: "https://www.youtube.com/watch?v=fZJUKixyeXM" }
+                ]
+            };
+
+            displayCategories[2] = {
+                ...displayCategories[2],
+                title: "Para maratonar",
+                items: [
+                    { title: "O dono do jogo", year: "2025", img: "https://caras.com.br/wp-content/uploads/2025/10/Serie-Os-Donos-do-Jogo-Netflix.jpg", youtube: "https://www.youtube.com/watch?v=n7NIyrpreig" },
+                    { title: "The Umbrella Academy", year: "2024", img: "https://ntvb.tmsimg.com/assets/p16091714_b_h8_ah.jpg?w=960&h=540", youtube: "https://www.youtube.com/watch?v=YpCYkgUyf54" },
+                    { title: "Maze Runner", year: "2014", img: "https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABVsGxoVTN3VnXdl7RX0dChDDt4tO6yeXyuqjgeKvuofW2DS-IIFDXrONs8Qe5Y0Mvrydv8BzWzy0jFbmmCQsSAQUk9Uqn685vvdN.webp?r=4d6", youtube: "https://www.youtube.com/watch?v=ljsBRvD_fj8" },
+                    { title: "Dept. Q", year: "2025", img: "https://i.ytimg.com/vi/CzWdbi8h008/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDzstnmv-9SVVv9rjq9DtdK6eEp3Q", youtube: "https://www.youtube.com/watch?v=72hK6FUmm8o" },
+                    { title: "Inventando Anna", year: "2022", img: "https://www.infomoney.com.br/wp-content/uploads/2022/02/Inventando-Anna-Reproducao.jpg?fit=1920%2C1080&quality=50&strip=all", youtube: "https://www.youtube.com/watch?v=5Y_t1jJEMV0" }
                 ]
             };
         }
